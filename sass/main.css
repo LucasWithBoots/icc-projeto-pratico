@@ -1,0 +1,125 @@
+body {
+  background: #0D1117;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px 150px;
+}
+
+header {
+  display: flex;
+  height: 200px;
+  padding: 61px 90px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: linear-gradient(78deg, rgba(83, 52, 131, 0.06) 21.66%, rgba(233, 69, 96, 0.2) 63.03%), linear-gradient(96deg, #16213E 3.66%, #0F3460 62.8%);
+  grid-column: span 2;
+}
+header p {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.bloco1 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: linear-gradient(256deg, rgba(190, 49, 68, 0) 17.22%, rgba(240, 89, 65, 0.2) 68.99%), linear-gradient(116deg, #22092C 1.97%, #872341 54.33%);
+}
+.bloco1 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.bloco1 p {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bloco2 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: linear-gradient(256deg, rgba(68, 119, 206, 0) 17.22%, rgba(140, 171, 255, 0.2) 68.99%), linear-gradient(116deg, #35155D 1.97%, #512B81 54.33%);
+}
+.bloco2 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.bloco2 p {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bloco3 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: linear-gradient(256deg, rgba(28, 130, 173, 0) 17.22%, rgba(3, 201, 136, 0.2) 68.99%), linear-gradient(116deg, #13005A 1.97%, #00337C 54.33%);
+}
+.bloco3 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.bloco3 p {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}/*# sourceMappingURL=main.css.map */
