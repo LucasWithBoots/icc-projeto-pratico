@@ -6,6 +6,26 @@ body {
   margin: 20px 150px;
 }
 
+#menu {
+  background-color: white;
+  border-radius: 40px;
+  grid-column: span 2;
+}
+#menu ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+#menu ul li {
+  color: black;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 header {
   display: flex;
   height: 200px;
