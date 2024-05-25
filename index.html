@@ -23,18 +23,430 @@
   </div>
 
   <header>
-    <p>How to Use?</p>
+    <p><i>How to Use?</i></p>
   </header>
   <div class="bloco1">
     <table>
       <tr>
         <th>
-          <h1>init</h1>
+          <h1><b>init</b></h1>
         </th>
       </tr>
       <tr>
         <th>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida, arcu quis mattis faucibus, lacus mauris ornare arcu, nec iaculis felis eros non mauris. </p>
+          <ul class="descricao_comando">
+            <li>Cria um novo subdiretório .git no diretório atual, que contém todos os arquivos necessários do repositório.</li>
+            <li class="descricao_comando__codigo"><code>git init</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco2">
+    <table>
+      <tr>
+        <th>
+          <h1><b>clone</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Copia todo o repositório do servidor remoto para o diretório local.</li>
+            <li class="descricao_comando__codigo"><code>git clone &lt;url-do-repositório&gt;
+            </code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco3">
+    <table>
+      <tr>
+        <th>
+          <h1><b>branch</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Exibe todos os branches, cria um novo branch, ou exclui um branch.</li>
+            <li class="descricao_comando__codigo"><code>git branch</code></li>
+            <li class="descricao_comando__codigo"><code>git branch &lt;nome-do-branch&gt;</code></li>
+            <li class="descricao_comando__codigo"><code>git branch -d &lt;nome-do-branch&gt;</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco4">
+    <table>
+      <tr>
+        <th>
+          <h1><b>checkout</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Troca para o branch especificado ou para um commit específico.</li>
+            <li class="descricao_comando__codigo"><code>git checkout &lt;nome-do-branch&gt;</code></li>
+            <li class="descricao_comando__codigo"><code>git checkout &lt;commit-hash&gt;</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco5">
+    <table>
+      <tr>
+        <th>
+          <h1><b>status</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Informa quais arquivos foram modificados, quais estão no stage e quais não estão sendo rastreados.</li>
+            <li class="descricao_comando__codigo"><code>git status</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco6">
+    <table>
+      <tr>
+        <th>
+          <h1><b>diff</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Compara as mudanças não comitadas, diferenças entre branches ou commits específicos.</li>
+            <li class="descricao_comando__codigo"><code>git diff</code></li>
+            <li class="descricao_comando__codigo"><code>git diff &lt;branch&gt;</code></li>
+            <li class="descricao_comando__codigo"><code>git diff &lt;commit1&gt; &lt;commit2&gt;</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco7">
+    <table>
+      <tr>
+        <th>
+          <h1><b>add</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Adiciona um arquivo específico ou todos os arquivos modificados ao stage.</li>
+            <li class="descricao_comando__codigo"><code>git add &lt;arquivo&gt;</code></li>
+            <li class="descricao_comando__codigo"><code>git add .</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco8">
+    <table>
+      <tr>
+        <th>
+          <h1><b>commit</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Salva as mudanças adicionadas ao stage com uma mensagem descritiva.</li>
+            <li class="descricao_comando__codigo"><code>git commit -m "mensagem de commit"</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco9">
+    <table>
+      <tr>
+        <th>
+          <h1><b>push</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Envia commits do branch atual para o branch remoto especificado.</li>
+            <li class="descricao_comando__codigo"><code>git push &lt;remote&gt; &lt;branch&gt;</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco10">
+    <table>
+      <tr>
+        <th>
+          <h1><b>pull</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Baixa as mudanças do branch remoto e as incorpora ao branch atual.</li>
+            <li class="descricao_comando__codigo"><code>git pull &lt;remote&gt; &lt;branch&gt;</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco11">
+    <table>
+      <tr>
+        <th>
+          <h1><b>revert</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Cria um novo commit que desfaz as mudanças de um commit específico.</li>
+            <li class="descricao_comando__codigo"><code>git revert &lt;commit-hash&gt;</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco12">
+    <table>
+      <tr>
+        <th>
+          <h1><b>merge</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Combina o branch especificado com o branch atual.</li>
+            <li class="descricao_comando__codigo"><code>git merge &lt;branch&gt;</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco13">
+    <table>
+      <tr>
+        <th>
+          <h1><b>stash</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Salva mudanças atuais para que você possa trabalhar em outra coisa e, depois, recupera essas mudanças.</li>
+            <li class="descricao_comando__codigo"><code>git stash</code></li>
+            <li class="descricao_comando__codigo"><code>git stash apply</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco14">
+    <table>
+      <tr>
+        <th>
+          <h1><b>rm</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Remove um arquivo do repositório e do diretório de trabalho.</li>
+            <li class="descricao_comando__codigo"><code>git rm &lt;arquivo&gt;</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco15">
+    <table>
+      <tr>
+        <th>
+          <h1><b>config</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Configura as informações do usuário globalmente ou por repositório.</li>
+            <li class="descricao_comando__codigo"><code>git config --global user.name "Seu Nome"</code></li>
+            <li class="descricao_comando__codigo"><code>git config --global user.email "seu@email.com"</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco16">
+    <table>
+      <tr>
+        <th>
+          <h1><b>reset</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Move o ponteiro do HEAD para o commit especificado, opcionalmente redefinindo o estado da área de trabalho.</li>
+            <li class="descricao_comando__codigo"><code>git reset &lt;commit&gt;</code></li>
+            <li class="descricao_comando__codigo"><code>git reset --hard &lt;commit&gt;</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco17">
+    <table>
+      <tr>
+        <th>
+          <h1><b>remote</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Adiciona um repositório remoto ou exibe os repositórios remotos existentes.</li>
+            <li class="descricao_comando__codigo"><code>git remote add &lt;nome&gt; &lt;url&gt;</code></li>
+            <li class="descricao_comando__codigo"><code>git remote -v</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco18">
+    <table>
+      <tr>
+        <th>
+          <h1><b>fetch</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Baixa as mudanças do repositório remoto, mas não as mescla no branch atual.</li>
+            <li class="descricao_comando__codigo"><code>git fetch &lt;remote&gt;</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco19">
+    <table>
+      <tr>
+        <th>
+          <h1><b>show</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Exibe detalhes sobre um commit específico, incluindo as mudanças feitas.</li>
+            <li class="descricao_comando__codigo"><code>git show &lt;commit&gt;</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco20">
+    <table>
+      <tr>
+        <th>
+          <h1><b>help</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Abre a documentação de ajuda para o comando especificado.</li>
+            <li class="descricao_comando__codigo"><code>git help &lt;comando&gt;</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco21">
+    <table>
+      <tr>
+        <th>
+          <h1><b>rebase</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Muda a base de commits do branch atual para o branch especificado, reescrevendo o histórico de commits.</li>
+            <li class="descricao_comando__codigo"><code>git rebase &lt;branch&gt;</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco22">
+    <table>
+      <tr>
+        <th>
+          <h1><b>blame</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Exibe as linhas do arquivo com informações de quem fez a última modificação em cada linha.</li>
+            <li class="descricao_comando__codigo"><code>git blame &lt;arquivo&gt;</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco23">
+    <table>
+      <tr>
+        <th>
+          <h1><b>tag</b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Lista todas as tags, cria uma nova tag anotada, ou exclui uma tag.</li>
+            <li class="descricao_comando__codigo"><code>git tag</code></li>
+            <li class="descricao_comando__codigo"><code>git tag -a &lt;nome-da-tag&gt; -m "mensagem"</code></li>
+            <li class="descricao_comando__codigo"><code>git tag -d &lt;nome-da-tag&gt;</code></li>
+          </ul>
         </th>
       </tr>
     </table>

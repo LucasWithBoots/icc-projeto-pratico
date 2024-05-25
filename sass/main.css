@@ -25,6 +25,13 @@ body {
   font-weight: 500;
   line-height: normal;
 }
+#menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+#menu ul li a:hover {
+  color: rgb(105, 105, 105);
+}
 
 header {
   display: flex;
@@ -57,7 +64,6 @@ header p {
   gap: 10px;
   flex-shrink: 0;
   border-radius: 40px;
-  background: linear-gradient(256deg, rgba(190, 49, 68, 0) 17.22%, rgba(240, 89, 65, 0.2) 68.99%), linear-gradient(116deg, #22092C 1.97%, #872341 54.33%);
 }
 .bloco1 h1 {
   color: #FFF;
@@ -69,7 +75,15 @@ header p {
   line-height: normal;
   text-align: left;
 }
-.bloco1 p {
+.bloco1 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco1 .descricao_comando li {
   flex: 1 0 0;
   align-self: stretch;
   margin: 0;
@@ -79,6 +93,16 @@ header p {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.bloco1 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco1 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .bloco2 {
@@ -90,7 +114,6 @@ header p {
   gap: 10px;
   flex-shrink: 0;
   border-radius: 40px;
-  background: linear-gradient(256deg, rgba(68, 119, 206, 0) 17.22%, rgba(140, 171, 255, 0.2) 68.99%), linear-gradient(116deg, #35155D 1.97%, #512B81 54.33%);
 }
 .bloco2 h1 {
   color: #FFF;
@@ -102,7 +125,15 @@ header p {
   line-height: normal;
   text-align: left;
 }
-.bloco2 p {
+.bloco2 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco2 .descricao_comando li {
   flex: 1 0 0;
   align-self: stretch;
   margin: 0;
@@ -112,6 +143,16 @@ header p {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.bloco2 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco2 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .bloco3 {
@@ -123,7 +164,6 @@ header p {
   gap: 10px;
   flex-shrink: 0;
   border-radius: 40px;
-  background: linear-gradient(256deg, rgba(28, 130, 173, 0) 17.22%, rgba(3, 201, 136, 0.2) 68.99%), linear-gradient(116deg, #13005A 1.97%, #00337C 54.33%);
 }
 .bloco3 h1 {
   color: #FFF;
@@ -135,7 +175,15 @@ header p {
   line-height: normal;
   text-align: left;
 }
-.bloco3 p {
+.bloco3 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco3 .descricao_comando li {
   flex: 1 0 0;
   align-self: stretch;
   margin: 0;
@@ -145,6 +193,16 @@ header p {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.bloco3 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco3 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .bloco4 {
@@ -156,7 +214,6 @@ header p {
   gap: 10px;
   flex-shrink: 0;
   border-radius: 40px;
-  background: linear-gradient(256deg, rgba(115, 95, 50, 0) 17.22%, rgba(198, 151, 73, 0.2) 68.99%), linear-gradient(116deg, #000 1.97%, #282A3A 54.33%);
 }
 .bloco4 h1 {
   color: #FFF;
@@ -168,7 +225,15 @@ header p {
   line-height: normal;
   text-align: left;
 }
-.bloco4 p {
+.bloco4 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco4 .descricao_comando li {
   flex: 1 0 0;
   align-self: stretch;
   margin: 0;
@@ -179,10 +244,986 @@ header p {
   font-weight: 400;
   line-height: normal;
 }
+.bloco4 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco4 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bloco5 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.bloco5 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco5 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco5 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco5 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco5 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bloco6 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.bloco6 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco6 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco6 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco6 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco6 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bloco7 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.bloco7 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco7 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco7 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco7 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco7 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bloco8 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.bloco8 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco8 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco8 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco8 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco8 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bloco9 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.bloco9 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco9 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco9 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco9 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco9 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bloco10 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.bloco10 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco10 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco10 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco10 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco10 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bloco11 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.bloco11 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco11 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco11 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco11 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco11 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bloco12 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.bloco12 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco12 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco12 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco12 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco12 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bloco13 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.bloco13 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco13 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco13 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco13 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco13 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bloco14 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.bloco14 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco14 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco14 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco14 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco14 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bloco15 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.bloco15 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco15 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco15 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco15 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco15 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bloco16 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.bloco16 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco16 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco16 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco16 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco16 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bloco17 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.bloco17 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco17 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco17 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco17 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco17 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bloco18 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.bloco18 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco18 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco18 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco18 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco18 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bloco19 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.bloco19 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco19 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco19 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco19 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco19 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bloco20 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.bloco20 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco20 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco20 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco20 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco20 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bloco21 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.bloco21 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco21 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco21 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco21 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco21 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bloco22 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.bloco22 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco22 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco22 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco22 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco22 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bloco23 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+}
+.bloco23 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco23 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco23 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco23 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco23 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
 
 .fundo_video {
   background-color: white;
   width: 100%;
   height: 100%;
   grid-column: span 2;
+}
+
+mark {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px;
 }/*# sourceMappingURL=main.css.map */

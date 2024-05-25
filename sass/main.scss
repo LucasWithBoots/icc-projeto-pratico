@@ -27,6 +27,16 @@ body {
       font-style: normal;
       font-weight: 500;
       line-height: normal;
+
+      a {
+        text-decoration: none;
+
+        color: black;
+      }
+
+      a:hover {
+        color: rgb(105, 105, 105);
+      }
     }
   }
 }
@@ -58,7 +68,7 @@ header {
 
 }
 
-@mixin gerador_bloco($background) {
+@mixin gerador_bloco() {
   display: flex;
   height: 400px;
   padding: 30px;
@@ -68,7 +78,6 @@ header {
   flex-shrink: 0;
 
   border-radius: 40px;
-  background: $background;
 
 
   h1 {
@@ -82,38 +91,47 @@ header {
     text-align: left;
   }
 
-  p {
-    flex: 1 0 0;
-    align-self: stretch;
+
+  .descricao_comando {
+    list-style: none;
+    padding: 0;
     margin: 0;
 
-    color: #FFF;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    li {
+      flex: 1 0 0;
+      align-self: stretch;
+      margin: 0;
+
+      color: #FFF;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .descricao_comando__codigo::before {
+      content: "$";
+      margin-right: 10px;
+      color: white;
+    }
+
+    .descricao_comando__codigo {
+      background-color: black;
+      padding: 10px;
+      border-radius: 10px;
+    }
   }
 }
 
-.bloco1 {
-  $background: linear-gradient(256deg, rgba(190, 49, 68, 0.00) 17.22%, rgba(240, 89, 65, 0.20) 68.99%), linear-gradient(116deg, #22092C 1.97%, #872341 54.33%);
-  @include gerador_bloco($background);
-}
-
-.bloco2 {
-  $background: linear-gradient(256deg, rgba(68, 119, 206, 0.00) 17.22%, rgba(140, 171, 255, 0.20) 68.99%), linear-gradient(116deg, #35155D 1.97%, #512B81 54.33%);
-  @include gerador_bloco($background);
-}
-
-.bloco3 {
-  $background: linear-gradient(256deg, rgba(28, 130, 173, 0.00) 17.22%, rgba(3, 201, 136, 0.20) 68.99%), linear-gradient(116deg, #13005A 1.97%, #00337C 54.33%);
-  @include gerador_bloco($background);
-}
-
-.bloco4 {
-  $background: linear-gradient(256deg, rgba(115, 95, 50, 0.00) 17.22%, rgba(198, 151, 73, 0.20) 68.99%), linear-gradient(116deg, #000 1.97%, #282A3A 54.33%);
-  @include gerador_bloco($background);
+@for $i from 1 through 23 {
+  .bloco#{$i} {
+    @include gerador_bloco();
+  }
 }
 
 .fundo_video {
@@ -122,4 +140,26 @@ header {
   height: 100%;
 
   grid-column: span 2;
+}
+
+mark {
+  grid-column: span 2;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  border-radius: 10px;
+  background-color: white;
+
+  color: black;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  padding: 10px;
+
+
 }
