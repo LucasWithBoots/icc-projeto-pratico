@@ -125,7 +125,30 @@ header {
       padding: 10px;
       border-radius: 10px;
     }
+
+    img {
+      border-radius: 10px
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(94, 94, 254);
+    }
   }
+}
+
+.bloco0 {
+  @include gerador_bloco();
+
+  background: linear-gradient(256deg, rgba(28, 130, 173, 0.00) 17.22%, rgba(3, 201, 136, 0.20) 68.99%), linear-gradient(116deg, #13005A 1.97%, #00337C 54.33%);
+
+  grid-column: span 2;
+
+  height: auto;
+}
+
+.novo_fundo {
+  background: linear-gradient(242deg, rgba(241, 0, 134, 0.00) 21.6%, rgba(245, 130, 167, 0.20) 57.44%), linear-gradient(116deg, #180A0A 1.97%, #711A75 54.33%);
 }
 
 @for $i from 1 through 23 {
@@ -143,23 +166,7 @@ header {
 }
 
 mark {
-  grid-column: span 2;
-
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-  border-radius: 10px;
-  background-color: white;
-
-  color: black;
-  font-family: Inter;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-
-  padding: 10px;
-
-
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
 }

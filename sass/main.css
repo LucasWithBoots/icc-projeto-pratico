@@ -55,6 +55,70 @@ header p {
   line-height: normal;
 }
 
+.bloco0 {
+  display: flex;
+  height: 400px;
+  padding: 30px;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: linear-gradient(256deg, rgba(28, 130, 173, 0) 17.22%, rgba(3, 201, 136, 0.2) 68.99%), linear-gradient(116deg, #13005A 1.97%, #00337C 54.33%);
+  grid-column: span 2;
+  height: auto;
+}
+.bloco0 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+.bloco0 .descricao_comando {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bloco0 .descricao_comando li {
+  flex: 1 0 0;
+  align-self: stretch;
+  margin: 0;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bloco0 .descricao_comando .descricao_comando__codigo::before {
+  content: "$";
+  margin-right: 10px;
+  color: white;
+}
+.bloco0 .descricao_comando .descricao_comando__codigo {
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+.bloco0 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco0 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
+}
+
+.novo_fundo {
+  background: linear-gradient(242deg, rgba(241, 0, 134, 0) 21.6%, rgba(245, 130, 167, 0.2) 57.44%), linear-gradient(116deg, #180A0A 1.97%, #711A75 54.33%);
+}
+
 .bloco1 {
   display: flex;
   height: 400px;
@@ -103,6 +167,13 @@ header p {
   background-color: black;
   padding: 10px;
   border-radius: 10px;
+}
+.bloco1 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco1 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
 }
 
 .bloco2 {
@@ -154,6 +225,13 @@ header p {
   padding: 10px;
   border-radius: 10px;
 }
+.bloco2 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco2 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
+}
 
 .bloco3 {
   display: flex;
@@ -203,6 +281,13 @@ header p {
   background-color: black;
   padding: 10px;
   border-radius: 10px;
+}
+.bloco3 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco3 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
 }
 
 .bloco4 {
@@ -254,6 +339,13 @@ header p {
   padding: 10px;
   border-radius: 10px;
 }
+.bloco4 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco4 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
+}
 
 .bloco5 {
   display: flex;
@@ -303,6 +395,13 @@ header p {
   background-color: black;
   padding: 10px;
   border-radius: 10px;
+}
+.bloco5 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco5 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
 }
 
 .bloco6 {
@@ -354,6 +453,13 @@ header p {
   padding: 10px;
   border-radius: 10px;
 }
+.bloco6 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco6 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
+}
 
 .bloco7 {
   display: flex;
@@ -403,6 +509,13 @@ header p {
   background-color: black;
   padding: 10px;
   border-radius: 10px;
+}
+.bloco7 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco7 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
 }
 
 .bloco8 {
@@ -454,6 +567,13 @@ header p {
   padding: 10px;
   border-radius: 10px;
 }
+.bloco8 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco8 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
+}
 
 .bloco9 {
   display: flex;
@@ -503,6 +623,13 @@ header p {
   background-color: black;
   padding: 10px;
   border-radius: 10px;
+}
+.bloco9 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco9 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
 }
 
 .bloco10 {
@@ -554,6 +681,13 @@ header p {
   padding: 10px;
   border-radius: 10px;
 }
+.bloco10 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco10 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
+}
 
 .bloco11 {
   display: flex;
@@ -603,6 +737,13 @@ header p {
   background-color: black;
   padding: 10px;
   border-radius: 10px;
+}
+.bloco11 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco11 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
 }
 
 .bloco12 {
@@ -654,6 +795,13 @@ header p {
   padding: 10px;
   border-radius: 10px;
 }
+.bloco12 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco12 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
+}
 
 .bloco13 {
   display: flex;
@@ -703,6 +851,13 @@ header p {
   background-color: black;
   padding: 10px;
   border-radius: 10px;
+}
+.bloco13 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco13 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
 }
 
 .bloco14 {
@@ -754,6 +909,13 @@ header p {
   padding: 10px;
   border-radius: 10px;
 }
+.bloco14 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco14 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
+}
 
 .bloco15 {
   display: flex;
@@ -803,6 +965,13 @@ header p {
   background-color: black;
   padding: 10px;
   border-radius: 10px;
+}
+.bloco15 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco15 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
 }
 
 .bloco16 {
@@ -854,6 +1023,13 @@ header p {
   padding: 10px;
   border-radius: 10px;
 }
+.bloco16 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco16 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
+}
 
 .bloco17 {
   display: flex;
@@ -903,6 +1079,13 @@ header p {
   background-color: black;
   padding: 10px;
   border-radius: 10px;
+}
+.bloco17 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco17 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
 }
 
 .bloco18 {
@@ -954,6 +1137,13 @@ header p {
   padding: 10px;
   border-radius: 10px;
 }
+.bloco18 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco18 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
+}
 
 .bloco19 {
   display: flex;
@@ -1003,6 +1193,13 @@ header p {
   background-color: black;
   padding: 10px;
   border-radius: 10px;
+}
+.bloco19 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco19 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
 }
 
 .bloco20 {
@@ -1054,6 +1251,13 @@ header p {
   padding: 10px;
   border-radius: 10px;
 }
+.bloco20 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco20 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
+}
 
 .bloco21 {
   display: flex;
@@ -1103,6 +1307,13 @@ header p {
   background-color: black;
   padding: 10px;
   border-radius: 10px;
+}
+.bloco21 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco21 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
 }
 
 .bloco22 {
@@ -1154,6 +1365,13 @@ header p {
   padding: 10px;
   border-radius: 10px;
 }
+.bloco22 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco22 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
+}
 
 .bloco23 {
   display: flex;
@@ -1204,6 +1422,13 @@ header p {
   padding: 10px;
   border-radius: 10px;
 }
+.bloco23 .descricao_comando img {
+  border-radius: 10px;
+}
+.bloco23 .descricao_comando a {
+  text-decoration: none;
+  color: rgb(94, 94, 254);
+}
 
 .fundo_video {
   background-color: white;
@@ -1213,17 +1438,7 @@ header p {
 }
 
 mark {
-  grid-column: span 2;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-  background-color: white;
-  color: black;
-  font-family: Inter;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding: 10px;
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */

@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>How to use? Git!</title>
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
   <link rel="stylesheet" href="sass/main.css">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -25,6 +25,63 @@
   <header>
     <p><i>How to Use?</i></p>
   </header>
+
+  <div class="bloco0">
+    <table>
+      <tr>
+        <th>
+          <h1><b><mark>criação do repositório</mark></b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Primeiro, você precisa ter o Git instalado na sua máquina. Você pode verificar se o Git já está instalado executando o seguinte comando no terminal:</li>
+            <li class="descricao_comando__codigo"><code>git --version</code></li>
+            <li>Depois precisamos configurá-lo com o nome de usuário e e-mail. Estes dados são usados para identificar quem faz as alterações no repositório.</li>
+            <li class="descricao_comando__codigo"><code>git config --global user.name "Seu Nome"</code></li>
+            <li class="descricao_comando__codigo"><code>git config --global user.email "seu.email@example.com"</code></li>
+            <li>Podemos agora criar nosso diretório e iniciar o projeto com o git!</li>
+            <li class="descricao_comando__codigo"><code>mkdir meu-projeto</code></li>
+            <li class="descricao_comando__codigo"><code>cd meu-projeto</code></li>
+            <li class="descricao_comando__codigo"><code>git init</code></li>
+            <li>Quando terminamos de inserir, copiar, excluir ou alterar os arquivos dentro do diretório, podemos adicionar as nossas modificações em um commit.</li>
+            <li class="descricao_comando__codigo"><code>git add .</code></li>
+            <li class="descricao_comando__codigo"><code>git commit -m "Primeiro commit"</code></li>
+            <li><small>(O "." em "git add ." significa que todas as alterações que foram feitas devem ser inseridas no commit)</small></li>
+            <li>Para adicionarmos o repositório em um serviço de hospedagem na nuvem é necessário criar um repositório no serviço escolhido, depois se conectar, e por fim fazer o "push" dos dados para a nuvem.</li>
+            <li class="descricao_comando__codigo"><code>git remote add origin https://github.com/usuario/meu-projeto.git</code></li>
+            <li class="descricao_comando__codigo"><code>git push -u origin master</code></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="bloco0 novo_fundo">
+    <table>
+      <tr>
+        <th>
+          <h1><b><mark>configuração e o acesso ao repositório GitHub</mark></b></h1>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <ul class="descricao_comando">
+            <li>Para utilizar do serviço de hospedagem do <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages">GitHub Pages</a>, é necessário abrir o repositório do projeto e clicar na opção com a engrenagem "Settings"</li>
+            <li><img src="./img/passo1.png" alt="Passo 1 GitHub"></li>
+            <li>Acessar a opção no meu lateral esquerdo, "Pages"</li>
+            <li><img src="./img/passo2.png" alt="Passo 2 GitHub"></li>
+            <li>Escolher na seção "Branch" qual branch iremos usar na publicação do site</li>
+            <li><img src="./img/passo3.png" alt="Passo 3 GitHub"></li>
+            <li>Se tudo foi feito corretamente, após alguns minutos já se pode acessar o site pelo endereço disponibilizado</li>
+            <li><img src="./img/passo4.png" alt="Passo 4 GitHub"></li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </div>
+
   <div class="bloco1">
     <table>
       <tr>
