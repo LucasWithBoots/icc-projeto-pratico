@@ -19,6 +19,16 @@ body {
 
     list-style: none;
 
+
+    #github {
+      display: flex;
+    }
+
+    #github::before {
+      content: url("../img/icon_linkexterno.svg");
+      margin-right: 10px;
+    }
+
     li {
       color: black;
       text-align: center;
@@ -187,4 +197,17 @@ mark {
 video {
   width: 100%;
   border-radius: 10px;
+}
+
+.creditos {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  a {
+    color: cyan;
+  }
 }
